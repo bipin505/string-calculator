@@ -1,5 +1,4 @@
 export function add(numbers: string): number {
-  debugger;
   if (numbers.trim() === "" || numbers === '""') return 0;
 
   let delimiter = /[\n,]/;

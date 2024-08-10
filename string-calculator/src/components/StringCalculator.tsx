@@ -9,9 +9,8 @@ const StringCalculator: React.FC = () => {
   const handleCalculate = () => {
     try {
       setError(null);
-      console.log(input);
-      const sum = add(input);
-      console.log(sum);
+      const normalInput =input.replace(/\\n/g,'\n');
+      const sum = add(normalInput);
       setResult(sum);
     } catch (err: any) {
       setError(err.message);
