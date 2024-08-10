@@ -1,7 +1,13 @@
 import "./App.css";
+import React from "react";
+import StringCalculator from "./components/StringCalculator";
 
-function App() {
-  return <div>hello</div>;
-}
+const App: React.FC = () => {
+  return (
+    <div>
+      <StringCalculator />
+    </div>
+  );
+};
 
 export default App;
